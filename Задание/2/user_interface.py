@@ -2,11 +2,10 @@ import os
 from image_processing import resize_image, rotate_image
 
 def get_user_input():
-    """
-    Запрашивает у пользователя путь к изображению и параметры для обработки.
     
-    :return: Путь к изображению, новый размер и угол поворота.
-    """
+ #   Запрашивает у пользователя путь к изображению и параметры для обработки.
+ #   :return: Путь к изображению, новый размер и угол поворота.
+    
     input_path = input("Введите путь к изображению: ")
     
     while not os.path.isfile(input_path):
