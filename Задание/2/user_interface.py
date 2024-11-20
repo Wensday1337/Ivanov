@@ -22,8 +22,8 @@ def main():
     input_path, new_width, new_height, angle = get_user_input()
     
       # Создание имен для выходных файлов
-    resized_output_path = "resized_output.jpg"
-    rotated_output_path = "rotated_output.jpg"
+    resized_output_path = "resized_output.png"
+    rotated_output_path = "rotated_output.png"
     
       # Вызов функций обработки изображений
     resize_image(input_path, resized_output_path, new_width, new_height)
