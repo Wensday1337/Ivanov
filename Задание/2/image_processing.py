@@ -1,12 +1,13 @@
 from PIL import Image
 
 def resize_image(input_path, output_path, new_width, new_height):
- #    Изменяет размер изображения до заданной ширины и высоты.
- #   :param input_path: Путь к входному изображению.
- #   :param output_path: Путь для сохранения изменённого изображения.
- #   :param new_width: Новая ширина изображения.
- #   :param new_height: Новая высота изображения.
-    
+
+  # Изменяет размер изображения до заданной ширины и высоты.
+  # :param input_path: Путь к входному изображению.
+  # :param output_path: Путь для сохранения изменённого изображения.
+  # :param new_width: Новая ширина изображения.
+  # :param new_height: Новая высота изображения.
+
     try:
         with Image.open(input_path) as img:
             img = img.resize((new_width, new_height), Image.ANTIALIAS)
@@ -17,10 +18,10 @@ def resize_image(input_path, output_path, new_width, new_height):
 
 def rotate_image(input_path, output_path, angle):
 
- #   Поворачивает изображение на заданный угол.
- #   :param input_path: Путь к входному изображению.
- #   :param output_path: Путь для сохранения повёрнутого изображения.
- #   :param angle: Угол поворота в градусах.
+  # Поворачивает изображение на заданный угол.
+  # :param input_path: Путь к входному изображению.
+  # :param output_path: Путь для сохранения повёрнутого изображения.
+  # :param angle: Угол поворота в градусах.
     
     try:
         with Image.open(input_path) as img:
