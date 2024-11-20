@@ -10,7 +10,7 @@ def resize_image(input_path, output_path, new_width, new_height):
 
     try:
         with Image.open(input_path) as img:
-            img = img.resize((new_width, new_height), Image.ANTIALIAS)
+            img = img.resize((new_width, new_height), Image.LANCZOS)
             img.save(output_path)
             print(f"Изображение изменено и сохранено как {output_path}")
     except Exception as e:
