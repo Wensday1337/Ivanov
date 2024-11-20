@@ -3,8 +3,8 @@ from image_processing import resize_image, rotate_image
 
 def get_user_input():
     
- #   Запрашивает у пользователя путь к изображению и параметры для обработки.
- #   :return: Путь к изображению, новый размер и угол поворота.
+  # Запрашивает у пользователя путь к изображению и параметры для обработки.
+  # :return: Путь к изображению, новый размер и угол поворота.
     
     input_path = input("Введите путь к изображению: ")
     
@@ -21,11 +21,11 @@ def get_user_input():
 def main():
     input_path, new_width, new_height, angle = get_user_input()
     
-    # Создание имен для выходных файлов
+      # Создание имен для выходных файлов
     resized_output_path = "resized_output.jpg"
     rotated_output_path = "rotated_output.jpg"
     
-    # Вызов функций обработки изображений
+      # Вызов функций обработки изображений
     resize_image(input_path, resized_output_path, new_width, new_height)
     rotate_image(input_path, rotated_output_path, angle)
 
